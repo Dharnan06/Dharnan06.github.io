@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dharnan M — Java Full Stack Developer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236d4cff'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-size='13' fill='white'%3EDM%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <div class="noise-overlay"></div>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <aside class="sidebar">
+    <div class="logo-wrap">
+      <div class="logo">DM</div>
+      <div class="logo-text">
+        <h2>Dharnan M</h2>
+        <span class="logo-sub">Full Stack Dev</span>
+      </div>
+    </div>
+
+    <nav class="side-nav">
+      <a href="#home" class="active"><span class="nav-icon">⌂</span><span>Home</span></a>
+      <a href="#about"><span class="nav-icon">♙</span><span>About</span></a>
+      <a href="#skills"><span class="nav-icon">⚙</span><span>Skills</span></a>
+      <a href="#projects"><span class="nav-icon">▣</span><span>Projects</span></a>
+      <a href="#certifications"><span class="nav-icon">◎</span><span>Certifications</span></a>
+      <a href="#education"><span class="nav-icon">✧</span><span>Education</span></a>
+      <a href="#contact"><span class="nav-icon">✉</span><span>Contact</span></a>
+    </nav>
+
+    <div class="side-social">
+      <a href="https://github.com/Dharnan06" target="_blank" title="GitHub">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/dharnan/" target="_blank" title="LinkedIn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a href="mailto:dharnanm@gmail.com" title="Email">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+
+    <a class="resume-btn" href="#contact">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      Download Resume
+    </a>
+  </aside>
+
+  <main class="main">
+    <!-- ═══ HERO ═══ -->
+    <section id="home" class="hero reveal">
+      <div class="top-status">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          Available for Opportunities
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="hello">Hello, I'm 👋</p>
+          <h1 class="hero-name">Dharnan M</h1>
+          <h2 class="hero-title">Java Full Stack <span>Developer</span></h2>
+          <p class="hero-desc">
+            Recent Computer Science Graduate passionate about building scalable web applications
+            using Java, Spring Boot, MySQL and modern web technologies.
+          </p>
+
+          <div class="tech-pills">
+            <span>☕ Java</span>
+            <span>🌱 Spring Boot</span>
+            <span>🐬 MySQL</span>
+            <span>🐳 Docker</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View My Work →</a>
+            <a href="https://github.com/Dharnan06" target="_blank" class="btn-ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile photo + code card -->
+        <div class="hero-right">
+          <div class="profile-photo-wrap">
+            <div class="photo-ring"></div>
+            <img src="Image.jpeg" alt="Dharnan M" class="profile-photo" />
+            <div class="photo-badge">
+              <span>👨‍💻</span> CS Engineer
+            </div>
+          </div>
+          <div class="code-card">
+            <div class="code-header">
+              <div class="dots"><i></i><i></i><i></i></div>
+              <span class="code-lang">☕ Java</span>
+            </div>
+<pre><code><span class="kw">public class</span> <span class="cls">Dharnan</span> {
+  <span class="kw">public static void</span> <span class="fn">main</span>(String[] args) {
+    Passion passion = <span class="kw">new</span> Passion();
+
+    passion.setCode(<span class="str">"Java"</span>);
+    passion.setGoal(<span class="str">"Build Impactful Solutions"</span>);
+    passion.setFocus(<span class="str">"Backend Development"</span>);
+    passion.setStatus(<span class="str">"Always Improving"</span>);
+
+    System.out.println(passion);
+  }
+}</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-icon">🚀</span>
+          <div>
+            <h3>3+</h3>
+            <p>Projects<br><small>Completed &amp; Ongoing</small></p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon">⌘</span>
+          <div>
+            <h3>10+</h3>
+            <p>Technologies<br><small>Tools &amp; Frameworks</small></p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon">🏆</span>
+          <div>
+            <h3>8+</h3>
+            <p>Certifications<br><small>Professional Certificates</small></p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-icon">🎓</span>
+          <div>
+            <h3>8.16</h3>
+            <p>CGPA<br><small>Academic Performance</small></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about" class="panel reveal">
+      <div class="section-label">ABOUT ME</div>
+      <div class="about-layout">
+        <div class="about-text">
+          <h2>Get to know me!</h2>
+          <p>
+            I recently graduated with a Bachelor's degree in Computer Science and Engineering
+            from Panimalar Engineering College, Anna University.
+          </p>
+          <p>
+            I am passionate about backend development and have hands-on experience building
+            applications using Java, Spring Boot, MySQL, JWT Authentication, REST APIs and Docker.
+          </p>
+          <p>
+            I love solving real-world problems and continuously improving my skills to build
+            scalable and efficient software solutions.
+          </p>
+          <a href="#contact" class="btn-outline">More About Me →</a>
+        </div>
+
+        <!-- Animated terminal replacing laptop -->
+        <div class="terminal-visual">
+          <div class="terminal-header">
+            <div class="terminal-dots"><i></i><i></i><i></i></div>
+            <span>dharnan@portfolio:~</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+            <div class="t-output">Dharnan M — Java Full Stack Developer</div>
+            <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">cat skills.txt</span></div>
+            <div class="t-output">Java · Spring Boot · MySQL · Docker · REST APIs</div>
+            <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">ls projects/</span></div>
+            <div class="t-output">NammaKuzhu/  StudentMgmt/  AutoTechSupport/</div>
+            <div class="t-line"><span class="t-prompt">$</span> <span class="t-cmd">echo $STATUS</span></div>
+            <div class="t-output t-green">✓ Available for Opportunities</div>
+            <div class="t-line t-cursor"><span class="t-prompt">$</span> <span class="t-blink">▋</span></div>
+          </div>
+        </div>
+
+        <div class="what-i-do">
+          <h3>What I Do</h3>
+          <div class="do-item">
+            <span class="do-icon" style="background:rgba(124,92,255,.22)">♨</span>
+            <div><b>Backend Development</b><br><small>Building scalable REST APIs with Spring Boot</small></div>
+          </div>
+          <div class="do-item">
+            <span class="do-icon" style="background:rgba(37,216,138,.15)">▦</span>
+            <div><b>Database Management</b><br><small>Designing and optimizing relational databases</small></div>
+          </div>
+          <div class="do-item">
+            <span class="do-icon" style="background:rgba(74,163,255,.15)">🔗</span>
+            <div><b>API Integration</b><br><small>Creating secure and efficient API connections</small></div>
+          </div>
+          <div class="do-item">
+            <span class="do-icon" style="background:rgba(215,101,255,.15)">⌁</span>
+            <div><b>Problem Solving</b><br><small>Solving real-world problems with clean code</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills" class="panel reveal">
+      <div class="section-label">SKILLS</div>
+      <h2>Technologies I Work With</h2>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <div class="skill-icon">☕</div>
+          <h3>Backend</h3>
+          <p>Java, Spring Boot, Spring MVC, REST APIs, Spring Security, JWT</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">🗄️</div>
+          <h3>Database</h3>
+          <p>MySQL, SQL, JPA, Hibernate, Entity Relationships</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">🌐</div>
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, Bootstrap, Responsive Design</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">🔧</div>
+          <h3>Tools</h3>
+          <p>Git, GitHub, Docker, Postman, IntelliJ IDEA, Maven</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">🧪</div>
+          <h3>Testing</h3>
+          <p>JUnit, Mockito Basics, API Testing with Postman</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-icon">🐍</div>
+          <h3>Other</h3>
+          <p>Python Basics, Cloud Computing Fundamentals, Unity 3D Basics</p>
+          <div class="skill-bar"><div class="skill-fill" style="width:55%"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section id="projects" class="panel reveal">
+      <div class="section-head">
+        <div>
+          <div class="section-label">PROJECTS</div>
+          <h2>Things I've Built</h2>
+        </div>
+        <a href="https://github.com/Dharnan06" target="_blank" class="view-all-btn">View All Projects →</a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-title">
+            <span class="icon orange">▣</span>
+            <h3>NammaKuzhu</h3>
+            <b class="badge-ongoing">Ongoing</b>
+          </div>
+          <p>Self Help Group Savings &amp; Loan Management System currently under development.</p>
+          <ul>
+            <li>OTP Authentication</li><li>Loan Management</li><li>Group Management</li>
+            <li>Role Based Access</li><li>Savings Tracking</li><li>Member Management</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JWT</span><span>Docker</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Dharnan06" target="_blank" class="proj-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <span class="proj-link-ghost">Details →</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-title">
+            <span class="icon green">▤</span>
+            <h3>Student Management System</h3>
+          </div>
+          <p>A web application to manage student information with modern features.</p>
+          <ul>
+            <li>Student Registration</li><li>CRUD Operations</li><li>Search &amp; Filter</li>
+            <li>Responsive Design</li><li>Image Upload</li><li>Data Validation</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Bootstrap</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Dharnan06" target="_blank" class="proj-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <span class="proj-link-ghost">Details →</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-title">
+            <span class="icon pink">▧</span>
+            <h3>Automated Tech Support System</h3>
+          </div>
+          <p>A system to automate customer support and provide efficient solutions.</p>
+          <ul>
+            <li>Customer Query Resolution</li><li>Ticket Management</li><li>Chat-Based Support</li>
+            <li>Real-time Updates</li><li>Human Agent Escalation</li><li>Admin Dashboard</li>
+          </ul>
+          <div class="tags"><span>Java</span><span>Spring Boot</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="project-links">
+            <a href="https://github.com/Dharnan06" target="_blank" class="proj-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <span class="proj-link-ghost">Details →</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══ CERTIFICATIONS ═══ -->
+    <section id="certifications" class="panel reveal">
+      <div class="section-head">
+        <div>
+          <div class="section-label">CERTIFICATIONS</div>
+          <h2>My Achievements</h2>
+        </div>
+        <span class="cert-count">8 Certificates</span>
+      </div>
+
+      <div class="cert-grid">
+
+        <!-- 1. Deloitte -->
+        <div class="cert-card">
+          <div class="cert-logo deloitte-logo">
+            <span>Deloitte.</span>
+          </div>
+          <div class="cert-body">
+            <h3>Technology Job Simulation</h3>
+            <p class="cert-issuer">Forage · June 2026</p>
+            <p class="cert-desc">Completed practical tasks in Coding &amp; Development. Verified by Deloitte CHRO.</p>
+            <div class="cert-tags"><span>Coding</span><span>Development</span></div>
+            <a href="#" class="cert-btn" data-cert="deloitte">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- 2. IBM Docker -->
+        <div class="cert-card">
+          <div class="cert-logo ibm-logo">
+            <span>IBM</span>
+          </div>
+          <div class="cert-body">
+            <h3>Docker Essentials: A Developer Introduction</h3>
+            <p class="cert-issuer">IBM Cognitive Class · June 2026</p>
+            <p class="cert-desc">Passed the IBM CognitiveClass.ai course on Docker fundamentals for developers.</p>
+            <div class="cert-tags"><span>Docker</span><span>Containers</span></div>
+            <a href="#" class="cert-btn" data-cert="docker">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- 3. GeeksforGeeks Java -->
+        <div class="cert-card">
+          <div class="cert-logo gfg-logo">
+            <span>GfG</span>
+          </div>
+          <div class="cert-body">
+            <h3>Java Programming Language</h3>
+            <p class="cert-issuer">GeeksforGeeks · 2025</p>
+            <p class="cert-desc">Completed a 4-week intensive Java course covering core to advanced Java concepts.</p>
+            <div class="cert-tags"><span>Java</span><span>OOP</span></div>
+            <a href="#" class="cert-btn" data-cert="java-gfg">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- 4. HackerRank Java -->
+        <div class="cert-card">
+          <div class="cert-logo hr-logo">
+            <span>HR</span>
+          </div>
+          <div class="cert-body">
+            <h3>Java (Basic) Certification</h3>
+            <p class="cert-issuer">HackerRank · June 12, 2025</p>
+            <p class="cert-desc">Passed the HackerRank skill certification test for Java (Basic). ID: D95E4OF92A28</p>
+            <div class="cert-tags"><span>Java</span><span>Algorithms</span></div>
+            <a href="#" class="cert-btn" data-cert="java-hr">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- 5. SQL -->
+        <div class="cert-card">
+          <div class="cert-logo sql-logo">
+            <span>SQL</span>
+          </div>
+          <div class="cert-body">
+            <h3>Introduction to SQL</h3>
+            <p class="cert-issuer">Simplilearn SkillUp · June 11, 2025</p>
+            <p class="cert-desc">Successfully completed the Introduction to SQL online course. Code: 8455408</p>
+            <div class="cert-tags"><span>SQL</span><span>Database</span></div>
+            <a href="#" class="cert-btn" data-cert="sql">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- 6. NASSCOM Data Science -->
+        <div class="cert-card">
+          <div class="cert-logo nasscom-logo">
+            <span>NASSCOM</span>
+          </div>
+          <div class="cert-body">
+            <h3>Data Science for Beginners</h3>
+            <p class="cert-issuer">FutureSkills Prime · Dec 28, 2023</p>
+            <p class="cert-desc">Gold category (89%) — Cleared assessment aligned to NASSCOM IT-ITeS competency standards.</p>
+            <div class="cert-tags"><span>Data Science</span><span>Gold 🥇</span></div>
+            <a href="#" class="cert-btn" data-cert="datasci">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- 7. UiPath Automation -->
+        <div class="cert-card">
+          <div class="cert-logo uipath-logo">
+            <span>UiPath</span>
+          </div>
+          <div class="cert-body">
+            <h3>Automation Developer Associate</h3>
+            <p class="cert-issuer">FutureSkills Prime · Apr 02, 2025</p>
+            <p class="cert-desc">Gold category (84.5%) — Certified in UiPath automation developer associate training.</p>
+            <div class="cert-tags"><span>RPA</span><span>Gold 🥇</span></div>
+            <a href="#" class="cert-btn" data-cert="uipath">View Certificate →</a>
+          </div>
+        </div>
+
+        <!-- 8. Infosys Cloud -->
+        <div class="cert-card">
+          <div class="cert-logo infosys-logo">
+            <span>Infosys</span>
+          </div>
+          <div class="cert-body">
+            <h3>Introduction to Cloud Computing</h3>
+            <p class="cert-issuer">Infosys Springboard · June 14, 2025</p>
+            <p class="cert-desc">Successfully completed the cloud computing fundamentals course on Infosys Springboard.</p>
+            <div class="cert-tags"><span>Cloud</span><span>Computing</span></div>
+            <a href="#" class="cert-btn" data-cert="cloud">View Certificate →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certificate Modal -->
+      <div class="cert-modal" id="certModal">
+        <div class="cert-modal-backdrop" id="certModalBackdrop"></div>
+        <div class="cert-modal-content">
+          <button class="cert-modal-close" id="certModalClose">✕</button>
+          <div class="cert-modal-body" id="certModalBody">
+            <div class="cert-modal-coming">
+              <div class="cert-modal-icon">📄</div>
+              <h3>Certificate Coming Soon</h3>
+              <p>The certificate will be available once uploaded to Google Drive.</p>
+              <p class="cert-modal-note">Link will be updated shortly!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ EDUCATION ═══ -->
+    <section id="education" class="panel reveal">
+      <div class="section-label">EDUCATION</div>
+      <h2>Education</h2>
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-body">
+          <h3>B.E Computer Science and Engineering</h3>
+          <p class="edu-uni">Panimalar Engineering College, Anna University</p>
+          <p class="edu-meta">2022 – 2026 &nbsp;|&nbsp; CGPA: <strong>8.16</strong></p>
+          <div class="edu-tags"><span>CSE</span><span>Anna University</span><span>Graduated 2026</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact" class="panel contact-panel reveal">
+      <div class="contact-left">
+        <div class="section-label">CONTACT</div>
+        <h2>LET'S CONNECT</h2>
+        <p>I'm currently looking for new opportunities. Let's build something amazing together!</p>
+        <a href="mailto:dharnanm@gmail.com" class="btn-primary">Get In Touch →</a>
+      </div>
+
+      <div class="contact-grid">
+        <a href="mailto:dharnanm@gmail.com" class="contact-card">
+          <div class="contact-card-icon">✉</div>
+          <b>Email</b>
+          <span>dharnanm@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/dharnan/" target="_blank" class="contact-card">
+          <div class="contact-card-icon">in</div>
+          <b>LinkedIn</b>
+          <span>linkedin.com/in/dharnan</span>
+        </a>
+        <a href="https://github.com/Dharnan06" target="_blank" class="contact-card">
+          <div class="contact-card-icon">GH</div>
+          <b>GitHub</b>
+          <span>github.com/Dharnan06</span>
+        </a>
+        <div class="contact-card">
+          <div class="contact-card-icon">📍</div>
+          <b>Location</b>
+          <span>Chennai, Tamil Nadu, India</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© 2026 Dharnan M. All rights reserved.</span>
+      <span>Made with ❤️ and lots of ☕</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
