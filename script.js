@@ -5,6 +5,13 @@ document.addEventListener("mousemove", (e) => {
   glow.style.top = e.clientY + "px";
 });
 
+// Theme toggle
+const toggle = document.getElementById("themeToggle");
+toggle?.addEventListener("click", () => {
+  document.body.classList.toggle("light");
+  toggle.textContent = document.body.classList.contains("light") ? "🌙" : "☀️";
+});
+
 // Particles
 function createParticles() {
   const container = document.getElementById("particles");
@@ -56,16 +63,16 @@ const certModal = document.getElementById("certModal");
 const certModalClose = document.getElementById("certModalClose");
 const certModalBackdrop = document.getElementById("certModalBackdrop");
 
-// Map of cert data-cert → Google Drive link (placeholder: add link after upload)
+// Certificate PDF filenames (same folder as index.html)
 const certLinks = {
-  "deloitte":  "", // Add Drive link here
-  "docker":    "", // Add Drive link here
-  "java-gfg":  "", // Add Drive link here
-  "java-hr":   "", // Add Drive link here
-  "sql":       "", // Add Drive link here
-  "datasci":   "", // Add Drive link here
-  "uipath":    "", // Add Drive link here
-  "cloud":     "", // Add Drive link here
+  "deloitte":  "Technology_Job_Simulation.pdf",
+  "docker":    "Docker.pdf",
+  "java-gfg":  "java1.pdf",
+  "java-hr":   "Java.pdf",
+  "sql":       "SQL.pdf",
+  "datasci":   "Data_Science.pdf",
+  "uipath":    "Automation_Developer.pdf",
+  "cloud":     "cloud.pdf",
 };
 
 document.querySelectorAll(".cert-btn").forEach(btn => {
@@ -73,13 +80,8 @@ document.querySelectorAll(".cert-btn").forEach(btn => {
     e.preventDefault();
     const certKey = btn.dataset.cert;
     const link = certLinks[certKey];
-
     if (link) {
       window.open(link, "_blank");
-    } else {
-      // Show modal with "coming soon"
-      certModal.classList.add("open");
-      document.body.style.overflow = "hidden";
     }
   });
 });
