@@ -107,3 +107,46 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+// Mobile nav hamburger
+const hamburger = document.getElementById("hamburger");
+const mobileDrawer = document.getElementById("mobileDrawer");
+const mobileOverlay = document.getElementById("mobileOverlay");
+
+function openDrawer() {
+  hamburger.classList.add("open");
+  mobileDrawer.classList.add("open");
+  mobileOverlay.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeDrawer() {
+  hamburger.classList.remove("open");
+  mobileDrawer.classList.remove("open");
+  mobileOverlay.classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+hamburger?.addEventListener("click", () => {
+  hamburger.classList.contains("open") ? closeDrawer() : openDrawer();
+});
+
+mobileOverlay?.addEventListener("click", closeDrawer);
+
+// Close drawer when a nav link is clicked
+document.querySelectorAll(".mob-link").forEach(link => {
+  link.addEventListener("click", closeDrawer);
+});
+
+// Active highlight for mobile nav
+window.addEventListener("scroll", () => {
+  let current = "home";
+  sections.forEach(section => {
+    if (scrollY >= section.offsetTop - 160) current = section.id;
+  });
+  document.querySelectorAll(".mob-link").forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) link.classList.add("active");
+  });
+}, { passive: true });
+
